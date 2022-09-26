@@ -13,9 +13,9 @@ const Navbar = () => (
             <Link href="/" paddingLeft="2">Homes</Link>
         </Box>
         <Spacer/>
-        <Box>
+        <Flex justifyContent="center" alignItems="center">
             <Menu>
-                <MenuButton as={IconButton} icon={<FcMenu/>} variant="outlined" color="red.400"/>
+                <MenuButton as={IconButton} icon={<FcMenu style={{width: "30px", height: "30px"}}/>} variant="outlined" color="red.400"/>
                 <MenuList>
                     <Link href="/" passHref>
                         <MenuItem icon={<FcHome/>}>Home</MenuItem>
@@ -31,7 +31,7 @@ const Navbar = () => (
                     </Link>
                 </MenuList>
             </Menu>
-        </Box>
+        </Flex>
     </Flex>
 )
 
